@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym Management System</title>
+
+<!-- External CSS (Bootstrap) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Internal CSS -->
+<style>
+body{background:#f4f6f8;}
+header{background:#111;color:white;padding:20px;}
+.card{margin-bottom:20px;}
+.box{border:2px solid #333;padding:10px;margin:10px;}
+span{color:red;font-weight:bold;}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="text-center">
+<h1>💪 PowerFit Gym</h1>
+<p>Your Health, Our Priority</p>
+</header>
+
+<!-- NAVIGATION -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand" href="#">Gym</a>
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#members">Members</a></li>
+<li class="nav-item"><a class="nav-link" href="#plans">Plans</a></li>
+<li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
+</ul>
+</div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<section class="container mt-4">
+
+<!-- ALERT -->
+<div class="alert alert-success">New Year Offer: <span>20% Discount</span> on Annual Plan!</div>
+
+<div class="row">
+
+<!-- LEFT CONTENT -->
+<article class="col-md-8">
+
+<!-- IMAGE -->
+<img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1"
+class="img-fluid rounded mb-3" alt="Gym Image">
+
+<!-- TABLE -->
+<h3 id="members">Member Details</h3>
+<table class="table table-bordered table-striped">
+<thead class="table-dark">
+<tr><th>ID</th><th>Name</th><th>Plan</th></tr>
+</thead>
+<tbody>
+<tr><td>101</td><td>Rahul</td><td>Monthly</td></tr>
+<tr><td>102</td><td>Ananya</td><td>Annual</td></tr>
+</tbody>
+</table>
+
+<!-- PROGRESS BAR -->
+<h4>Workout Completion</h4>
+<div class="progress">
+<div class="progress-bar bg-success" style="width:70%">70%</div>
+</div>
+
+</article>
+
+<!-- RIGHT ASIDE -->
+<aside class="col-md-4">
+
+<div class="card">
+<div class="card-body">
+<h5>Working Hours</h5>
+<p>Morning: 5AM – 10AM</p>
+<p>Evening: 4PM – 10PM</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-body">
+<h5>Trainer Video</h5>
+<iframe width="100%" height="200"
+src=" https://naomikong.com/"
+title="Gym Video"></iframe>
+</div>
+</div>
+
+</aside>
+</div>
+
+<!-- FORM -->
+<section id="register" class="mt-4">
+<h3>Member Registration</h3>
+
+<form class="row g-3 box">
+
+<div class="col-md-6">
+<label class="form-label">Full Name</label>
+<input type="text" class="form-control" required>
+</div>
+
+<div class="col-md-6">
+<label class="form-label">Email</label>
+<input type="email" class="form-control">
+</div>
+
+<div class="col-md-6">
+<label class="form-label">Phone</label>
+<input type="tel" class="form-control">
+</div>
+
+<div class="col-md-6">
+<label class="form-label">Plan</label>
+<select class="form-select">
+<option>Monthly</option>
+<option>Quarterly</option>
+<option>Annual</option>
+</select>
+</div>
+
+<div class="col-md-6">
+<label class="form-label">Start Date</label>
+<input type="date" class="form-control">
+</div>
+
+<div class="col-md-6">
+<label class="form-label">Password</label>
+<input type="password" class="form-control">
+</div>
+
+<div class="col-12">
+<button class="btn btn-primary">Register</button>
+<button class="btn btn-secondary">Reset</button>
+</div>
+
+</form>
+</section>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3 mt-4">
+<p>&copy; 2025 PowerFit Gym | Designed using HTML5, CSS & Bootstrap</p>
+</footer>
+
+</body>
+</html>
